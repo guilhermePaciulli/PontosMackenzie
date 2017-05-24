@@ -7,19 +7,65 @@
 //
 
 import UIKit
+import CoreMotion
+import CoreLocation
 
 class ViewController: UIViewController {
 
+    let locationManager = CLLocationManager()
+
+    @IBOutlet weak var label: UILabel!
+    
+    @IBOutlet weak var lat: UILabel!
+    
+    @IBOutlet weak var long: UILabel!
+    
+    @IBOutlet weak var alt: UILabel!
+    
+    @IBOutlet weak var quatX: UILabel!
+    
+    @IBOutlet weak var quatY: UILabel!
+    
+    @IBOutlet weak var quatZ: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        locationManager.delegate = self
+        switch CLLocationManager.authorizationStatus() {
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+            break
+        case .authorizedWhenInUse, .authorizedAlways:
+            locationManager.startUpdatingLocation()
+            break
+        case .restricted, .denied:
+            break
+        }
     }
+}
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+extension ViewController : CLLocationManagerDelegate {
+    
+    func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
+        switch CLLocationManager.authorizationStatus() {
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+            break
+        case .authorizedWhenInUse, .authorizedAlways:
+            locationManager.startUpdatingLocation()
+            break
+        case .restricted, .denied:
+            break
+        }
     }
-
-
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let l = locations.first {
+            lat.text = "Latitude: \(l.coordinate.latitude)"
+            long.text = "Latitude: \(l.coordinate.longitude)"
+            alt.text = "Altitude: \(l.altitude)"
+        }
+    }
 }
 
