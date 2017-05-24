@@ -15,6 +15,7 @@
 		BDAA54E41ED6145E005CACB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAA54E21ED6145E005CACB8 /* LaunchScreen.storyboard */; };
 		BDAA54EF1ED6145E005CACB8 /* PontosMackenzieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA54EE1ED6145E005CACB8 /* PontosMackenzieTests.swift */; };
 		BDAA54FA1ED6145E005CACB8 /* PontosMackenzieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA54F91ED6145E005CACB8 /* PontosMackenzieUITests.swift */; };
+		BDAA55081ED62BCD005CACB8 /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA55071ED62BCD005CACB8 /* Region.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		BDAA54F51ED6145E005CACB8 /* PontosMackenzieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PontosMackenzieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BDAA54F91ED6145E005CACB8 /* PontosMackenzieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontosMackenzieUITests.swift; sourceTree = "<group>"; };
 		BDAA54FB1ED6145E005CACB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAA55071ED62BCD005CACB8 /* Region.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				BDAA54D61ED6145E005CACB8 /* AppDelegate.swift */,
 				BDAA54D81ED6145E005CACB8 /* ViewController.swift */,
 				BDAA54DA1ED6145E005CACB8 /* Main.storyboard */,
+				BDAA55071ED62BCD005CACB8 /* Region.swift */,
 				BDAA54E01ED6145E005CACB8 /* Assets.xcassets */,
 				BDAA54E21ED6145E005CACB8 /* LaunchScreen.storyboard */,
 				BDAA54E51ED6145E005CACB8 /* Info.plist */,
@@ -268,6 +271,7 @@
 				BDAA54D91ED6145E005CACB8 /* ViewController.swift in Sources */,
 				BDAA54D71ED6145E005CACB8 /* AppDelegate.swift in Sources */,
 				BDAA54DF1ED6145E005CACB8 /* PontosMackenzie.xcdatamodeld in Sources */,
+				BDAA55081ED62BCD005CACB8 /* Region.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

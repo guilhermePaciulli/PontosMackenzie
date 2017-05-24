@@ -9,10 +9,13 @@
 import UIKit
 import CoreMotion
 import CoreLocation
+import MapKit
 
 class ViewController: UIViewController {
 
     let locationManager = CLLocationManager()
+    
+    let motionManager = CMMotionManager()
 
     @IBOutlet weak var label: UILabel!
     
@@ -28,6 +31,10 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var quatZ: UILabel!
     
+    var regions: [Region] = []
+    
+    var userQuaternion = CMQuaternion()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -41,6 +48,28 @@ class ViewController: UIViewController {
             break
         case .restricted, .denied:
             break
+        }
+        //Prédio 31
+        regions.append(Region(title: "Prédio 31",
+                              center: CLLocationCoordinate2D(latitude: 10, longitude: 10),
+                              quaternionMax: CMQuaternion(x: 10, y: 10, z: 10, w: 0),
+                              quaternionMin: CMQuaternion(x: 10, y: 10, z: 10, w: 0)))
+        //Prédio 33
+        //Mr. Cheeney
+        
+        
+        if motionManager.isDeviceMotionAvailable {
+            motionManager.deviceMotionUpdateInterval = 0.5
+            motionManager.startDeviceMotionUpdates(to: OperationQueue.main, withHandler: { (deviceMotionData, error) in
+                if error == nil {
+                    if let data = deviceMotionData {
+                        self.quatX.text = "X: \(data.attitude.quaternion.x)"
+                        self.quatY.text = "Y: \(data.attitude.quaternion.y)"
+                        self.quatZ.text = "Z: \(data.attitude.quaternion.z)"
+                        self.userQuaternion = data.attitude.quaternion
+                    }
+                }
+            })
         }
     }
 }
@@ -65,6 +94,14 @@ extension ViewController : CLLocationManagerDelegate {
             lat.text = "Latitude: \(l.coordinate.latitude)"
             long.text = "Latitude: \(l.coordinate.longitude)"
             alt.text = "Altitude: \(l.altitude)"
+            
+            let c = MKMapPointForCoordinate(l.coordinate)
+            
+            if let userRegion = (regions.filter({ r in MKMapRectContainsPoint(r.regionRect, c) })).first {
+                if userRegion.compareQuaternion(q: self.userQuaternion) {
+                    label.text = userRegion.regionTitle
+                }
+            }
         }
     }
 }
