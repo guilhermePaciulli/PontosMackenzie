@@ -100,7 +100,11 @@ extension ViewController : CLLocationManagerDelegate {
             if let userRegion = (regions.filter({ r in MKMapRectContainsPoint(r.regionRect, c) })).first {
                 if userRegion.compareQuaternion(q: self.userQuaternion) {
                     label.text = userRegion.regionTitle
+                } else {
+                    label.text = "You are nowhere"
                 }
+            } else {
+                label.text = "You are nowhere"
             }
         }
     }
