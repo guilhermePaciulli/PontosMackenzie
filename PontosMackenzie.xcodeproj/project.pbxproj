@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDAA54D71ED6145E005CACB8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA54D61ED6145E005CACB8 /* AppDelegate.swift */; };
+		BDAA54D91ED6145E005CACB8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA54D81ED6145E005CACB8 /* ViewController.swift */; };
+		BDAA54DC1ED6145E005CACB8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAA54DA1ED6145E005CACB8 /* Main.storyboard */; };
+		BDAA54DF1ED6145E005CACB8 /* PontosMackenzie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BDAA54DD1ED6145E005CACB8 /* PontosMackenzie.xcdatamodeld */; };
+		BDAA54E11ED6145E005CACB8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BDAA54E01ED6145E005CACB8 /* Assets.xcassets */; };
+		BDAA54E41ED6145E005CACB8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BDAA54E21ED6145E005CACB8 /* LaunchScreen.storyboard */; };
+		BDAA54EF1ED6145E005CACB8 /* PontosMackenzieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA54EE1ED6145E005CACB8 /* PontosMackenzieTests.swift */; };
+		BDAA54FA1ED6145E005CACB8 /* PontosMackenzieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAA54F91ED6145E005CACB8 /* PontosMackenzieUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BDAA54EB1ED6145E005CACB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDAA54CB1ED6145E005CACB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAA54D21ED6145E005CACB8;
+			remoteInfo = PontosMackenzie;
+		};
+		BDAA54F61ED6145E005CACB8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BDAA54CB1ED6145E005CACB8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDAA54D21ED6145E005CACB8;
+			remoteInfo = PontosMackenzie;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BDAA54D31ED6145E005CACB8 /* PontosMackenzie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PontosMackenzie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAA54D61ED6145E005CACB8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BDAA54D81ED6145E005CACB8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BDAA54DB1ED6145E005CACB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BDAA54DE1ED6145E005CACB8 /* PontosMackenzie.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PontosMackenzie.xcdatamodel; sourceTree = "<group>"; };
+		BDAA54E01ED6145E005CACB8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BDAA54E31ED6145E005CACB8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BDAA54E51ED6145E005CACB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAA54EA1ED6145E005CACB8 /* PontosMackenzieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PontosMackenzieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAA54EE1ED6145E005CACB8 /* PontosMackenzieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontosMackenzieTests.swift; sourceTree = "<group>"; };
+		BDAA54F01ED6145E005CACB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BDAA54F51ED6145E005CACB8 /* PontosMackenzieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PontosMackenzieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDAA54F91ED6145E005CACB8 /* PontosMackenzieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PontosMackenzieUITests.swift; sourceTree = "<group>"; };
+		BDAA54FB1ED6145E005CACB8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BDAA54D01ED6145E005CACB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA54E71ED6145E005CACB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA54F21ED6145E005CACB8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BDAA54CA1ED6145E005CACB8 = {
+			isa = PBXGroup;
+			children = (
+				BDAA54D51ED6145E005CACB8 /* PontosMackenzie */,
+				BDAA54ED1ED6145E005CACB8 /* PontosMackenzieTests */,
+				BDAA54F81ED6145E005CACB8 /* PontosMackenzieUITests */,
+				BDAA54D41ED6145E005CACB8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BDAA54D41ED6145E005CACB8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA54D31ED6145E005CACB8 /* PontosMackenzie.app */,
+				BDAA54EA1ED6145E005CACB8 /* PontosMackenzieTests.xctest */,
+				BDAA54F51ED6145E005CACB8 /* PontosMackenzieUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BDAA54D51ED6145E005CACB8 /* PontosMackenzie */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA54D61ED6145E005CACB8 /* AppDelegate.swift */,
+				BDAA54D81ED6145E005CACB8 /* ViewController.swift */,
+				BDAA54DA1ED6145E005CACB8 /* Main.storyboard */,
+				BDAA54E01ED6145E005CACB8 /* Assets.xcassets */,
+				BDAA54E21ED6145E005CACB8 /* LaunchScreen.storyboard */,
+				BDAA54E51ED6145E005CACB8 /* Info.plist */,
+				BDAA54DD1ED6145E005CACB8 /* PontosMackenzie.xcdatamodeld */,
+			);
+			path = PontosMackenzie;
+			sourceTree = "<group>";
+		};
+		BDAA54ED1ED6145E005CACB8 /* PontosMackenzieTests */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA54EE1ED6145E005CACB8 /* PontosMackenzieTests.swift */,
+				BDAA54F01ED6145E005CACB8 /* Info.plist */,
+			);
+			path = PontosMackenzieTests;
+			sourceTree = "<group>";
+		};
+		BDAA54F81ED6145E005CACB8 /* PontosMackenzieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BDAA54F91ED6145E005CACB8 /* PontosMackenzieUITests.swift */,
+				BDAA54FB1ED6145E005CACB8 /* Info.plist */,
+			);
+			path = PontosMackenzieUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BDAA54D21ED6145E005CACB8 /* PontosMackenzie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAA54FE1ED6145E005CACB8 /* Build configuration list for PBXNativeTarget "PontosMackenzie" */;
+			buildPhases = (
+				BDAA54CF1ED6145E005CACB8 /* Sources */,
+				BDAA54D01ED6145E005CACB8 /* Frameworks */,
+				BDAA54D11ED6145E005CACB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PontosMackenzie;
+			productName = PontosMackenzie;
+			productReference = BDAA54D31ED6145E005CACB8 /* PontosMackenzie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BDAA54E91ED6145E005CACB8 /* PontosMackenzieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAA55011ED6145E005CACB8 /* Build configuration list for PBXNativeTarget "PontosMackenzieTests" */;
+			buildPhases = (
+				BDAA54E61ED6145E005CACB8 /* Sources */,
+				BDAA54E71ED6145E005CACB8 /* Frameworks */,
+				BDAA54E81ED6145E005CACB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAA54EC1ED6145E005CACB8 /* PBXTargetDependency */,
+			);
+			name = PontosMackenzieTests;
+			productName = PontosMackenzieTests;
+			productReference = BDAA54EA1ED6145E005CACB8 /* PontosMackenzieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BDAA54F41ED6145E005CACB8 /* PontosMackenzieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BDAA55041ED6145E005CACB8 /* Build configuration list for PBXNativeTarget "PontosMackenzieUITests" */;
+			buildPhases = (
+				BDAA54F11ED6145E005CACB8 /* Sources */,
+				BDAA54F21ED6145E005CACB8 /* Frameworks */,
+				BDAA54F31ED6145E005CACB8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BDAA54F71ED6145E005CACB8 /* PBXTargetDependency */,
+			);
+			name = PontosMackenzieUITests;
+			productName = PontosMackenzieUITests;
+			productReference = BDAA54F51ED6145E005CACB8 /* PontosMackenzieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BDAA54CB1ED6145E005CACB8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Guilherme Paciulli";
+				TargetAttributes = {
+					BDAA54D21ED6145E005CACB8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VLLH384AC4;
+						ProvisioningStyle = Automatic;
+					};
+					BDAA54E91ED6145E005CACB8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VLLH384AC4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDAA54D21ED6145E005CACB8;
+					};
+					BDAA54F41ED6145E005CACB8 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = VLLH384AC4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BDAA54D21ED6145E005CACB8;
+					};
+				};
+			};
+			buildConfigurationList = BDAA54CE1ED6145E005CACB8 /* Build configuration list for PBXProject "PontosMackenzie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BDAA54CA1ED6145E005CACB8;
+			productRefGroup = BDAA54D41ED6145E005CACB8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDAA54D21ED6145E005CACB8 /* PontosMackenzie */,
+				BDAA54E91ED6145E005CACB8 /* PontosMackenzieTests */,
+				BDAA54F41ED6145E005CACB8 /* PontosMackenzieUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BDAA54D11ED6145E005CACB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAA54E41ED6145E005CACB8 /* LaunchScreen.storyboard in Resources */,
+				BDAA54E11ED6145E005CACB8 /* Assets.xcassets in Resources */,
+				BDAA54DC1ED6145E005CACB8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA54E81ED6145E005CACB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA54F31ED6145E005CACB8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BDAA54CF1ED6145E005CACB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAA54D91ED6145E005CACB8 /* ViewController.swift in Sources */,
+				BDAA54D71ED6145E005CACB8 /* AppDelegate.swift in Sources */,
+				BDAA54DF1ED6145E005CACB8 /* PontosMackenzie.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA54E61ED6145E005CACB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAA54EF1ED6145E005CACB8 /* PontosMackenzieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BDAA54F11ED6145E005CACB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BDAA54FA1ED6145E005CACB8 /* PontosMackenzieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BDAA54EC1ED6145E005CACB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAA54D21ED6145E005CACB8 /* PontosMackenzie */;
+			targetProxy = BDAA54EB1ED6145E005CACB8 /* PBXContainerItemProxy */;
+		};
+		BDAA54F71ED6145E005CACB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BDAA54D21ED6145E005CACB8 /* PontosMackenzie */;
+			targetProxy = BDAA54F61ED6145E005CACB8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BDAA54DA1ED6145E005CACB8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAA54DB1ED6145E005CACB8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BDAA54E21ED6145E005CACB8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BDAA54E31ED6145E005CACB8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BDAA54FC1ED6145E005CACB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BDAA54FD1ED6145E005CACB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BDAA54FF1ED6145E005CACB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = PontosMackenzie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.PontosMackenzie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BDAA55001ED6145E005CACB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = PontosMackenzie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.PontosMackenzie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BDAA55021ED6145E005CACB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = PontosMackenzieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.PontosMackenzieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PontosMackenzie.app/PontosMackenzie";
+			};
+			name = Debug;
+		};
+		BDAA55031ED6145E005CACB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = PontosMackenzieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.PontosMackenzieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PontosMackenzie.app/PontosMackenzie";
+			};
+			name = Release;
+		};
+		BDAA55051ED6145E005CACB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = PontosMackenzieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.PontosMackenzieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PontosMackenzie;
+			};
+			name = Debug;
+		};
+		BDAA55061ED6145E005CACB8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = VLLH384AC4;
+				INFOPLIST_FILE = PontosMackenzieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = br.gh.paciulli.PontosMackenzieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PontosMackenzie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BDAA54CE1ED6145E005CACB8 /* Build configuration list for PBXProject "PontosMackenzie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAA54FC1ED6145E005CACB8 /* Debug */,
+				BDAA54FD1ED6145E005CACB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BDAA54FE1ED6145E005CACB8 /* Build configuration list for PBXNativeTarget "PontosMackenzie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAA54FF1ED6145E005CACB8 /* Debug */,
+				BDAA55001ED6145E005CACB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDAA55011ED6145E005CACB8 /* Build configuration list for PBXNativeTarget "PontosMackenzieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAA55021ED6145E005CACB8 /* Debug */,
+				BDAA55031ED6145E005CACB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BDAA55041ED6145E005CACB8 /* Build configuration list for PBXNativeTarget "PontosMackenzieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAA55051ED6145E005CACB8 /* Debug */,
+				BDAA55061ED6145E005CACB8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BDAA54DD1ED6145E005CACB8 /* PontosMackenzie.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BDAA54DE1ED6145E005CACB8 /* PontosMackenzie.xcdatamodel */,
+			);
+			currentVersion = BDAA54DE1ED6145E005CACB8 /* PontosMackenzie.xcdatamodel */;
+			path = PontosMackenzie.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BDAA54CB1ED6145E005CACB8 /* Project object */;
+}
