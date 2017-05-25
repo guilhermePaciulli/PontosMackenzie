@@ -10,7 +10,7 @@ import Foundation
 import MapKit
 import CoreMotion
 
-struct Region {
+class Region {
     
     var regionTitle: String
     
@@ -22,7 +22,7 @@ struct Region {
     
     init(title: String, center: CLLocationCoordinate2D, quaternionMax: CMQuaternion, quaternionMin: CMQuaternion) {
         self.regionTitle = title
-        let span = MKCoordinateSpan(latitudeDelta: 10, longitudeDelta: 10)
+        let span = MKCoordinateSpan(latitudeDelta: 0.0001, longitudeDelta: 0.0001)
         let region = MKCoordinateRegionMake(center, span)
         self.regionRect = Region.MKMapRectForCoordinateRegion(region: region)
         self.regionQuaternionMax = quaternionMax
@@ -30,12 +30,10 @@ struct Region {
     }
     
     func compareQuaternion(q: CMQuaternion) -> Bool {
-        return q.x < self.regionQuaternionMax.x &&
-               q.y < self.regionQuaternionMax.y &&
-               q.z < self.regionQuaternionMax.z &&
-               q.x > self.regionQuaternionMin.x &&
-               q.y > self.regionQuaternionMin.y &&
-               q.z > self.regionQuaternionMin.z
+        return abs(q.x) < abs(self.regionQuaternionMax.x)
+//               abs(q.y) < abs(self.regionQuaternionMax.y) &&
+//               abs(q.x) > abs(self.regionQuaternionMin.x)
+//               abs(q.y) > abs(self.regionQuaternionMin.y)
     }
     
     static func MKMapRectForCoordinateRegion(region: MKCoordinateRegion) -> MKMapRect {

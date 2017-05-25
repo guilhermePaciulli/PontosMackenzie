@@ -35,10 +35,14 @@ class ViewController: UIViewController {
     
     var userQuaternion = CMQuaternion()
     
+    var userRegion = MKMapPoint()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         locationManager.delegate = self
+//        locationManager.desiredAccuracy = kCLLocationAccuracyNearestTenMeters
+        
         switch CLLocationManager.authorizationStatus() {
         case .notDetermined:
             locationManager.requestWhenInUseAuthorization()
@@ -49,17 +53,22 @@ class ViewController: UIViewController {
         case .restricted, .denied:
             break
         }
-        //Prédio 31
-        regions.append(Region(title: "Prédio 31",
-                              center: CLLocationCoordinate2D(latitude: 10, longitude: 10),
-                              quaternionMax: CMQuaternion(x: 10, y: 10, z: 10, w: 0),
-                              quaternionMin: CMQuaternion(x: 10, y: 10, z: 10, w: 0)))
-        //Prédio 33
-        //Mr. Cheeney
+        regions.append(Region(title: "Auditório Ruy Barbosa",
+                              center: CLLocationCoordinate2D(latitude: -23.5466883983682, longitude: -46.6526777856486),
+                              quaternionMax: CMQuaternion(x: 0.9, y: 0.5, z: 0.1, w: 0),
+                              quaternionMin: CMQuaternion(x: 0.3, y: 0.3, z: 0.5, w: 0)))
+        regions.append(Region(title: "Starbucks",
+                              center: CLLocationCoordinate2D(latitude: -23.5467902384918, longitude: -46.6521239933061),
+                              quaternionMax: CMQuaternion(x: 0.9, y: 0.5, z: 0.1, w: 0),
+                              quaternionMin: CMQuaternion(x: 0.3, y: 0.2, z: 0.5, w: 0)))
+        regions.append(Region(title: "Mr. Cheeney",
+                              center: CLLocationCoordinate2D(latitude: -23.5476672789301, longitude: -46.6509710625248),
+                              quaternionMax: CMQuaternion(x: 0.7, y: 0.4, z: 0.1, w: 0),
+                              quaternionMin: CMQuaternion(x: 0.4, y: 0.1, z: 0.5, w: 0)))
         
         
         if motionManager.isDeviceMotionAvailable {
-            motionManager.deviceMotionUpdateInterval = 0.5
+            motionManager.deviceMotionUpdateInterval = 0.01
             motionManager.startDeviceMotionUpdates(to: OperationQueue.main, withHandler: { (deviceMotionData, error) in
                 if error == nil {
                     if let data = deviceMotionData {
@@ -67,6 +76,16 @@ class ViewController: UIViewController {
                         self.quatY.text = "Y: \(data.attitude.quaternion.y)"
                         self.quatZ.text = "Z: \(data.attitude.quaternion.z)"
                         self.userQuaternion = data.attitude.quaternion
+                        
+                        if let usrRegion = (self.regions.filter({ r in
+//                            r.compareQuaternion(q: self.userQuaternion) &&
+                            MKMapRectContainsPoint(r.regionRect, self.userRegion)
+                        })).first {
+                            self.label.text = usrRegion.regionTitle
+                        } else {
+                            self.label.text = "You are no where"
+                        }
+                        
                     }
                 }
             })
@@ -92,20 +111,9 @@ extension ViewController : CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let l = locations.first {
             lat.text = "Latitude: \(l.coordinate.latitude)"
-            long.text = "Latitude: \(l.coordinate.longitude)"
+            long.text = "Longitude: \(l.coordinate.longitude)"
             alt.text = "Altitude: \(l.altitude)"
-            
-            let c = MKMapPointForCoordinate(l.coordinate)
-            
-            if let userRegion = (regions.filter({ r in MKMapRectContainsPoint(r.regionRect, c) })).first {
-                if userRegion.compareQuaternion(q: self.userQuaternion) {
-                    label.text = userRegion.regionTitle
-                } else {
-                    label.text = "You are nowhere"
-                }
-            } else {
-                label.text = "You are nowhere"
-            }
+            self.userRegion = MKMapPointForCoordinate(l.coordinate)
         }
     }
 }
